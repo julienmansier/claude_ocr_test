@@ -16,6 +16,12 @@ This project compares the performance of Claude Haiku 4.5 and Claude Sonnet 4.5 
 
 ## Usage
 
+First, set your Anthropic API key:
+```bash
+export ANTHROPIC_API_KEY=your-api-key-here
+```
+
+Then run the script:
 ```bash
 node test-models.js <path-to-wine-image>
 ```
@@ -28,9 +34,10 @@ node test-models.js ~/Downloads/wine-bottle.jpg
 ## Requirements
 
 - Node.js (ESM modules enabled)
+- Anthropic API key (get one at https://console.anthropic.com)
 - Dependencies:
+  - `@anthropic-ai/sdk` - Official Anthropic SDK
   - `sharp` - For image processing and resizing
-  - Backend API server running on `http://localhost:3001` with `/api/claude/vision-test` endpoint
 
 ## How It Works
 
