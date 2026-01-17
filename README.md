@@ -31,13 +31,20 @@ Example:
 node test-models.js ~/Downloads/wine-bottle.jpg
 ```
 
+## Installation
+
+```bash
+npm install
+```
+
+This installs the required dependencies defined in `package.json`:
+- `@anthropic-ai/sdk` - Official Anthropic SDK
+- `sharp` - For image processing and resizing
+
 ## Requirements
 
-- Node.js (ESM modules enabled)
+- Node.js 18+ (ESM modules)
 - Anthropic API key (get one at https://console.anthropic.com)
-- Dependencies:
-  - `@anthropic-ai/sdk` - Official Anthropic SDK
-  - `sharp` - For image processing and resizing
 
 ## How It Works
 
@@ -61,3 +68,11 @@ The script provides:
 - Uses confidence levels to indicate uncertainty
 - Extracts multiple wines if present in a single image
 - Returns structured JSON for easy parsing
+
+## Model Identifiers
+
+The script uses the following Claude models (as of January 2026):
+- `claude-haiku-4-5-20251001` - Haiku 4.5
+- `claude-sonnet-4-5-20250929` - Sonnet 4.5
+
+See [Anthropic's model documentation](https://docs.anthropic.com/en/docs/about-claude/models) for the latest model identifiers.

@@ -189,12 +189,13 @@ async function testModel(modelName, displayName, emoji) {
 }
 
 // Run tests
+// Model identifiers: https://docs.anthropic.com/en/docs/about-claude/models
 console.log('Running tests...\n');
 
-const haikuResult = await testModel('claude-haiku-4.5-20250514', 'Haiku 4.5', '⚡');
+const haikuResult = await testModel('claude-haiku-4-5-20251001', 'Haiku 4.5', '⚡');
 console.log(`  Completed in ${haikuResult.latency}ms\n`);
 
-const sonnetResult = await testModel('claude-sonnet-4.5-20250514', 'Sonnet 4.5', '🎯');
+const sonnetResult = await testModel('claude-sonnet-4-5-20250929', 'Sonnet 4.5', '🎯');
 console.log(`  Completed in ${sonnetResult.latency}ms\n`);
 
 /**
